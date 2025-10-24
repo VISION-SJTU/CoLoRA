@@ -1,2 +1,2 @@
 # CoLoRA
-This is the code implementation for the CoLoRA (NeuralIPS 2025)
+This is the code implementation for the CoLoRA (NeurIPS 2025)
