@@ -9,17 +9,17 @@
 - apex
 
 ## Training command
-** Training convnext-b with CoLoRA **
+**Training convnext-b with CoLoRA**
 ```
 # train convnext-b with CoLoRA
 bash tools/train_convnext.sh
 ```
-** Training convnext-b with other PEFT techniques **: configure the `configs/mae/convnext_b_peft.py` file, and modify the backbone type from `ConvNeXtCoLoRA` to `ConvNeXtConvAdapter`, `ConvNeXtHIRA`, `ConvNeXtPiSSA`.
+**Training convnext-b with other PEFT techniques**: configure the `configs/mae/convnext_b_peft.py` file, and modify the backbone type from `ConvNeXtCoLoRA` to `ConvNeXtConvAdapter`, `ConvNeXtHIRA`, `ConvNeXtPiSSA`.
 
 ## Evaluation
 The results presented in the paper is collected from the training logs.
 ![](../assets/convnext_s_color16.png)
-** Evaluation convnext-b with PEFT techniques **
+**Evaluation convnext-b with PEFT techniques**
 ```
 # evaluate convnext-b with CoLoRA
 bash tools/eval_convnext.sh
