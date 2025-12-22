@@ -20,6 +20,7 @@ bash tools/train_convnext.sh
 The results presented in the paper is collected from the training logs.
 ![](../assets/convnext_s_color16.png)
 **Evaluation convnext-b with PEFT techniques**
+`ConvNeXt-S (CoLoRA)`
 ```
 # evaluate convnext-b with CoLoRA
 bash tools/eval_convnext.sh

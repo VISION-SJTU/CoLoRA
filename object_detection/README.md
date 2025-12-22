@@ -18,4 +18,5 @@ bash tools/dist_train.sh configs/convnext_peft.py 4
 
 ## Evaluation
 The results presented in the paper is collected from the training logs.
+`ConvNeXt-S (CoLoRA)`
 ![](../assets/convnext_s_colora_detection.png)
