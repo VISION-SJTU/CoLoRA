@@ -1,22 +1,6 @@
 # CoLoRA
 This is the code implementation for the CoLoRA (NeurIPS 2025).
-> Low-Rank Adaptation (LoRA) methods have demonstrated considerable success
-in achieving parameter-efficient fine-tuning (PEFT) for Transformer-based foun-
-dation models. These methods typically fine-tune individual Transformer layers
-using independent LoRA adaptations. However, directly applying existing LoRA
-techniques to convolutional networks (ConvNets) yields unsatisfactory results due
-to the high correlation between the stacked sequential layers of ConvNets. To
-overcome this challenge, we introduce a novel framework called Correlated Low-
-Rank Adaptation (CoLoRA), which explicitly utilizes correlated low-rank matri-
-ces to model the inter-layer dependencies among convolutional layers. Addition-
-ally, to enhance tuning efficiency, we propose a parameter-free filtering method
-that enlarges the receptive field of LoRA, thus minimizing interference from non-
-informative local regions. Comprehensive experiments conducted across various
-mainstream vision tasks, including image classification, semantic segmentation,
-and object detection, illustrate that CoLoRA significantly advances the state-of-
-the-art PEFT approaches. Notably, our CoLoRA achieves superior performance
-with only 5% of trainable parameters, surpassing full fine-tuning in the image
-classification task on the VTAB-1k dataset using ConvNeXt-S. 
+> Low-Rank Adaptation (LoRA) methods have demonstrated considerable success in achieving parameter-efficient fine-tuning (PEFT) for Transformer-based foundation models. These methods typically fine-tune individual Transformer layers using independent LoRA adaptations. However, directly applying existing LoRA techniques to convolutional networks (ConvNets) yields unsatisfactory results due to the high correlation between the stacked sequential layers of ConvNets. To overcome this challenge, we introduce a novel framework called **Co**rrelated **Lo**w-**R**ank **A**daptation (CoLoRA), which explicitly utilizes correlated low-rank matrices to model the inter-layer dependencies among convolutional layers. Additionally, to enhance tuning efficiency, we propose a parameter-free filtering method that enlarges the receptive field of LoRA, thus minimizing interference from non-informative local regions. Comprehensive experiments conducted across various mainstream vision tasks, including image classification, semantic segmentation, and object detection, illustrate that CoLoRA significantly advances the state-of-the-art PEFT approaches. Notably, our CoLoRA achieves superior performance with only 5% of trainable parameters, surpassing full fine-tuning in the image classification task on the VTAB-1k dataset using ConvNeXt-S. 
 
 ## Build environment
 > Since this work contains **classification**, **semantic segmentation** and **object detection**, we provide a detail guide to build environment. Following these instructions:
@@ -31,7 +15,7 @@ pip install -U openmim
 mim install mmcv-full==1.7.0
 mim install mmsegmentation==0.30.0
 mim install mmdet==2.28.2 
-mim install mmcls=0.25.0
+mim install mmcls==0.25.0
 # install nvidia apex (download the official repo for apex and use the official command to install. If any error, try the below command)
 pip install -v --no-cache-dir --no-build-isolation --global-option="--cpp_ext" --global-option="--cuda_ext" --global-option="--deprecated_fused_adam" --global-option="--xentropy" --global-option="--fast_multihead_attn" ./
 # install timm
