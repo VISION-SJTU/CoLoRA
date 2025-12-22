@@ -2,7 +2,7 @@
 This is the code implementation for the CoLoRA (NeurIPS 2025).
 > Low-Rank Adaptation (LoRA) methods have demonstrated considerable success in achieving parameter-efficient fine-tuning (PEFT) for Transformer-based foundation models. These methods typically fine-tune individual Transformer layers using independent LoRA adaptations. However, directly applying existing LoRA techniques to convolutional networks (ConvNets) yields unsatisfactory results due to the high correlation between the stacked sequential layers of ConvNets. To overcome this challenge, we introduce a novel framework called **Co**rrelated **Lo**w-**R**ank **A**daptation (CoLoRA), which explicitly utilizes correlated low-rank matrices to model the inter-layer dependencies among convolutional layers. Additionally, to enhance tuning efficiency, we propose a parameter-free filtering method that enlarges the receptive field of LoRA, thus minimizing interference from non-informative local regions. Comprehensive experiments conducted across various mainstream vision tasks, including image classification, semantic segmentation, and object detection, illustrate that CoLoRA significantly advances the state-of-the-art PEFT approaches. Notably, our CoLoRA achieves superior performance with only 5% of trainable parameters, surpassing full fine-tuning in the image classification task on the VTAB-1k dataset using ConvNeXt-S. 
 
-## Build environment
+## Build Environment
 > Since this work contains **classification**, **semantic segmentation** and **object detection**, we provide a detail guide to build environment. Following these instructions:
 
 ```
@@ -32,7 +32,7 @@ sudo vim /opt/conda/lib/python3.7/site-packages/apex/normalization/fused_layer_n
 ![](assets/colora.png)
 ![](assets/filter.png)
 
-## USAGE
+## Usage
 > Please refer to the `classification`, `semantic segmentation`, and `object detection` folders for the usage of CoLoRA on FGVC classification, semantic segmentation, and object detection tasks, respectively.
 
 ## Main Results
