@@ -49,7 +49,7 @@ We thank the following repositories for their helpful codebase:
 - [ConvAdapter](https://github.com/Hhhhhhao/Conv-Adapter)
 - [PiSSA](https://github.com/GraphPKU/PiSSA)
 
-If this repository is helpful to your work, please cite our paper:
+If this repository is helpful to your work, please consider citing this paper:
 ```
 @inproceedings{rancorrelated,
   title={Correlated Low-Rank Adaptation for ConvNets},
